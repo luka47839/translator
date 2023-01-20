@@ -1,0 +1,17 @@
+function translateToPolish(text) {
+  // English to Polish translation
+  var translation = {
+    "hello": "cześć",
+    "goodbye": "do widzenia",
+    "please": "proszę",
+    "thank you": "dziękuję",
+  };
+  
+  return translation[text] || `Sorry, I don't know how to translate "${text}".`;
+}
+
+console.log(translateToPolish("hello")); // Output: "cześć"
+console.log(translateToPolish("goodbye")); // Output: "do widzenia"
+console.log(translateToPolish("please")); // Output: "proszę"
+console.log(translateToPolish("thank you")); // Output: "dziękuję"
+console.log(translateToPolish("dog")); // Output: "Sorry, I don't know how to translate "dog"."
